@@ -1,0 +1,34 @@
+.search {
+  margin-top: 20px;
+  margin-left: 15px;
+}
+
+.login {
+  margin-top: 18px;
+  margin-left: 10px;
+}
+
+.dropdown {
+  margin-top: 18px;
+}
+.signin {
+  margin-top: 18px;
+}
+.btn-secondary {
+  background-color: aliceblue;
+}
+.btn btn-secondary dropdown-toggle {
+  background-color: black;
+}
+.titulo-1 {
+  margin-top: 35px;
+  font-size: 40px;
+  font-family: "Baloo Bhai", cursive;
+
+  color: #47682c;
+
+  text-align: center;
+}
+.silla {
+  margin-top: 30px;
+}
