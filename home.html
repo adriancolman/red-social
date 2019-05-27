@@ -3,40 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <title>home</title>
+    <link rel="stylesheet" href="home.css" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    
     <link
-      href="https://fonts.googleapis.com/css?family=Baloo+Bhai"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="home.css" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-      crossorigin="anonymous"
-    />
-    <script
-      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-      crossorigin="anonymous"
-    ></script>
+    href="https://fonts.googleapis.com/css?family=Baloo+Bhai"
+    rel="stylesheet"/>
+    
   </head>
+
+                             <!--primer paso-->
+
   <body>
     <div class="container">
       <div class="row" style="background-color:rgb(4, 4, 36)">
         <div class="logo col-1">
           <img
             class="logo"
-            src="C:\Users\Comunidad IT - 2\Documents\php-2019\colman\red-social\Imagenes\plato.jpg"
+            src="../red-social/imagenes/14271120.jpg"
             alt="logo"
             height="100px"
           />
@@ -53,20 +37,67 @@
             </form>
           </div>
         </div>
+                        <!--login-->
 
         <div class="offset-1 col-2">
           <div class="login">
-            <button type="button" class="btn btn-secondary btn-block">
-              login
-            </button>
+            <!-- Button trigger modal -->
+          <button type="button" class="btn btn-secondary btn-block" style="margin-left:5px"
+           data-toggle="modal" data-target="#exampleModal">
+           login
+          </button>
+  
+  <!-- Modal -->
+  <div class="modal" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="form-inline">
+                <label class="sr-only" for="inlineFormInputName2">Name</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="nombre">
+              
+                <label class="sr-only" for="inlineFormInputGroupUsername2">Usuario</label>
+                <div class="input-group mb-2 mr-sm-2">
+                  <div class="input-group-prepend">
+                    <div class="input-group-text">@</div>
+                  </div>
+                  <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Usuario">
+                </div>
+              
+                <div class="form-check mb-2 mr-sm-2">
+                  <input class="form-check-input" type="checkbox" id="inlineFormCheck">
+                  <label class="form-check-label" for="inlineFormCheck">
+                    Remember me
+                  </label>
+                </div>
+              
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">cerrar</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
           </div>
         </div>
+                      <!--signup-->
 
         <div class="col-2">
-          <div class="signin">
-            <button type="button" class="btn btn-secondary btn-block">
-              signin
-            </button>
+          <div class="signup">
+              <a href="signup.html"><button type="button" class="btn btn-secondary btn-block">
+                
+              
+              signup
+            </button></a>
           </div>
         </div>
 
@@ -115,12 +146,56 @@
           <img
             class="silla"
             alt="silla"
-            src="C:\Users\Comunidad IT - 2\Documents\php-2019\colman\red-social\Imagenes\silla.jpg"
+            src="..\red-social\imagenes\Minimalist-Blogging-e1516278695313.jpg"
             width="700"
             height="500"
           />
         </div>
       </div>
+      <br>
+
+        <!--cajon de comentarios-->
+
+      <div class="row">
+        
+        <div class="offset-2 col-md-10 col-sm-12">   
+        <textarea class="form-control" rows="3" id="post-text" placeholder="comenta"></textarea>
+       </div>
+       
+      </div>
+                   <!--botones likes-->
+
+      <div class="row" >
+        <div class="offset-2 col-md-10 col-sm-12">
+           
+            <div class="btn-group" role="group" aria-label="Basic example">
+                <button type="button" class="btn btn-secondary" id="post-button"
+                 style="margin-top:10px; background-color: blue  ">
+                  post</button>
+                <button type="button" style="margin-top:10px;"
+                 class="btn btn-secondary">delete post</button>
+                
+              </div>
+              <div class="col-sm-12 col-md-6" id="posts-container">
+                </div>
+              
+        </div>
+        
+
+      
+
+       </div>
+
+      </div> 
+      <br> 
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+  
+ 
   </body>
+  
+    
 </html>

@@ -5,13 +5,13 @@
 
 .login {
   margin-top: 18px;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 
 .dropdown {
   margin-top: 18px;
 }
-.signin {
+.signup {
   margin-top: 18px;
 }
 .btn-secondary {
@@ -31,4 +31,20 @@
 }
 .silla {
   margin-top: 30px;
+}
+
+/*para el signup*/
+
+.titulo-signup {
+  font-size: 66px;
+  font-style: italic;
+  color: #250001;
+}
+
+
+#nombre-usuario{
+  margin-top: 20px;
+  font-size: 26px;
+  display: inline-block
+  
 }
