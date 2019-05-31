@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" 
     integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
     crossorigin="anonymous">
@@ -16,23 +15,90 @@
     />
     <title>Perfil</title>
 </head>
+      <!-- comienzo seccion perfil-->
 <body>
     <div class="container">
-        <div class="row" style="background-color: #041B15">
+        <div class="row" style="background-color: #136F63">
             <div class="col-md-3 col-sm-12" id="foto-user">
-                 <img src="foto-perfil.jpg" alt="foto-perfil" style="height: 100px; width:100px">
+
+                 <!--hacer que el usuario inserte su imagen-->
+                 <label for="upload">
+                        <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span>
+                        <input type="file" id="upload" style="display:none">
+                  </label>
+                 <div class="foto-perfil">
+                 <img src="https://previews.123rf.com/images/guru3d/guru3d1505/guru3d150507672/40421799-hombre-3d-da-inserta-tu-tema-sobre-un-fondo-blanco-la-tira-de-la-pel%C3%ADcula.jpg"
+                  alt="foto-perfil" id="foto-perfil" style="height: 100px; width:100px; border-color: black "> </div>
 
             </div>
 
-            <div class="col-md-9 col-sm-12">
-                <p id="nombre-usuario">NOMBRE DE USUARIO <i class="fas fa-dharmachakra"> </i> </p> 
-                
-                
-                <p>hola<p>hola dos</p>
+            <div class="col-md-4 col-sm-12">
+
+                <p style=" font-family: Baloo Bhai, cursive; font-size: 30px;">nombre de usuario</p> <br>
+                <form class="form-inline my-2 my-lg-0">
+                        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
             </div>
+                                <!--boton configuracion-->
+            
+            <div class="col-md-3">
+                
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" style="color: #84CAE7"
+                     id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                     edita tu perfil <i class="fas fa-cog"></i>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                      <a class="dropdown-item" href="#!">Action</a>
+                      <a class="dropdown-item" href="#!">Another action</a>
+                    </div>
+                 
+                </div>
+                 <br>
+                    <ul style="color: #84CAE7">
+                        <li>Publicaciones</li>
+                        <li>Seguidos</li>
+                        <li>Seguidores</li>
+                    </ul>
+
+            </div>    
+            
+                   <!--logo-->
+            <div class="col-md-2 col-sm-0">
+               <a href="home.html" >
+               <img src="imagenes\14271120.jpg" alt="logo-chico" style="margin-top: 20px; width: 100px; height: 100px; border-radius: 10px"></a>
+            </div>                 
+                
+                
+                
+            
         
         </div>
+
+           <!-- segunda fila publicaciones-->
+
+         
+        <div class="row">
+             <div class="col-sm-12 col-3 col-7" style="background-color: #84CAE7">
+                <h3 style="text-align: center; font-family: Baloo Bhai, cursive;">Tus historias MINIMAS</h3>
+
+             </div>
+             
+             <div class="offset-2 col-sm-12 col-8">
+                    <div><p style="font-family: Baloo Bhai">Selecciona la imagen para subir tus fotos</p></div>
+                        <div class="image-wall">
+                          <label for="file-input">
+                            <img src="13777281.jpg" alt ="Click aquí para subir tu foto"
+                             title ="Click aquí para subir tu foto" style="width: 500px; height:450px" > 
+                          </label>
+                            <input id="file-input" name="foto" type="file"/>
+                        </div>
+             </div>
+
+        </div>  
     </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     
 </body>
 </html>

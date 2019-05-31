@@ -13,4 +13,9 @@ $(document).ready(function() {
         );
     });
 
+    $("#foto-perfil").click(function(){
+        $("#button-foto-perfil").hide()
+
+    })
+
 });
