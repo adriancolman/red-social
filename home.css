@@ -41,12 +41,12 @@
   color: #250001;
 }
 
-
-#nombre-usuario{
+#nombre-usuario {
   margin-top: 20px;
   font-size: 26px;
-  display: inline-block
-  
+  display: inline-block;
 }
 
-·file-input {display: none;}
+.title-edit-perfil {
+  color: #47682c;
+}
