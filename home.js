@@ -13,15 +13,9 @@ $(document).ready(function() {
     $("#button-foto-perfil").hide();
   });
 
-  /*login*/
+                                /*posteos*/
 
-  $("#usuario-login-name").val();
-  $("#inlineFormInputGroupUsername2").val();
+                                
 
-  var usuario = $("#usuario-login-name").val();
-
-
-  $(#enter-login).click(function(){
-  if (usuario === "adrian") alert("usuario correcto");})
   
 });

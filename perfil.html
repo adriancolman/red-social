@@ -91,7 +91,7 @@
                     </div>
                         <div class="image-wall">
                           <label for="file-input">
-                            <img src="13777281.jpg" alt ="Click aquí para subir tu foto"
+                            <img src="imagenes\subir-foto.png" alt ="Click aquí para subir tu foto"
                              title ="Click aquí para subir tu foto" style="width: 500px; height:450px" > 
                           </label>
                             <input id="file-input" name="foto" type="file" style="display: none"/>
@@ -105,21 +105,44 @@
 
         <div class="row">
             <div class="col sm-12 offset-2 col-8">
-                <textarea class="form-control" rows="3" id="post-text" placeholder="comenta"></textarea>
+                <div class="comentarios">
+                 <textarea class="form-control" rows="3" id="post-text" placeholder="comenta"></textarea>
 
-                <div class="btn-group" role="group" aria-label="Basic example">
+                 <div class="btn-group" role="group" aria-label="Basic example">
                     <button type="button" class="btn btn-secondary" id="post-button"
                      style="margin-top:10px; background-color: blue  ">
                       post</button>
-                    <button type="button" style="margin-top:10px;" id="boton-loco"
+                    <button type="button" style="margin-top:10px;" id="boton-delete"
                      class="btn btn-secondary">delete post</button>
                     
                   </div>
+                </div>
+                
+
+                
 
                   
                  
             </div>
-        </div>   
+            
+        </div>  
+        <div class="row">
+             <div class="col sm-12 offset-2 col-8">
+                        <div class="cajon-comentarios">
+                            <div class="row">
+                         
+        
+                         <div class="btn-group" role="group" aria-label="Basic example">
+                            <button type="button" class="btn btn-secondary" id="post-button"
+                             style="margin-top:10px; background-color: blue  ">
+                              post</button>
+                            <button type="button" style="margin-top:10px;" id="boton-delete"
+                             class="btn btn-secondary">delete post</button>
+                            
+                          </div>
+                        </div>
+                </div>
+        </div> 
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
